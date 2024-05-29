@@ -1,0 +1,22 @@
+.appName{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.navbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.whereTo{
+    border-radius: 20px;
+    outline: none;
+    
+    /* border: none; */
+}
