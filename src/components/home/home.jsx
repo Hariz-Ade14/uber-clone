@@ -1,46 +1,30 @@
 import React, { useEffect, useRef } from "react";
-import AOS from "aos";
-import 'aos/dist/aos.css';
+
 import "./home.css";
+import {FaSearch,FaArrowRight} from "react-icons/fa"
 
 
 
 function Home() {
-  // const appRef = useRef();
-
-  // useEffect(() => {
-  //    AOS.init({
-  //     duration: 1000,
-  //     delay: 1000,
-  //     once: false,
-  //    });
-
-  //    setTimeout(() => {
-  //       appRef.current.style.display = "none";
-
-  //    }, 4000);
-  // },[]);
-
-  // console.log(appRef.current);
-
-	// return (
-  //   <div>
-  //       <div
-  //         className='appName align-items-center justify-content-center'
-  //         ref={appRef}
-  //       >
-  //         <h1 className='text-white' data-aos="fade-down">Rider</h1>
-  //       </div>
+   return (
+    <>
+       <h1 className="name m-3">rider</h1>
+       <div class="form-group m-3 d-flex justify-content-between align-items-center">
+          <FaSearch className="search-icon mx-2" size={20}/>
+          <input type="text" class="form-control" id="exampleInputName" placeholder="Where to?"/>
+       </div>
+       <div className="lfg m-3 px-3 py-2">  
+           <h3>Ready? Then let's roll.</h3>
+           <br/>
+           <br/>
+           <br/>
+           <p>Ride with Rider<FaArrowRight className="mx-2"/></p>
+          
         
-  //       <div>
-  //          <h3 className="m-2">Rider</h3>
-  //          <input type="text" className="whereTo m-3 p-2 w-100" placeholder="Where to?"/>
-           
-  //       </div>
-       
-  //   </div>
-	// );
-  <h1>HOME</h1>
+        </div>
+    </>
+     
+   )
 
 }
 
