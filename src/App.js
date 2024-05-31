@@ -7,6 +7,9 @@ import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import {browserHistory} from "react-router";
 import Preview from "./components/Preview";
 import {FaHome, FaUser, FaCalendar, FaList} from "react-icons/fa";
+import SignUp from "./components/SignUp/SignUp";
+import LogIn from "./components/LogIn/LogIn";
+
 
 function App() {
 	useEffect(() => {
@@ -22,7 +25,8 @@ function App() {
 					<Routes>
 						<Route path='/' element={<Home />} />
 						<Route path='/Services' element={<Services />} />
-						{/* <Route path="/" element={<Home/>} /> */}
+						<Route path="/SignUp/SignUp" element={<SignUp/>} />
+						<Route path="/LogIn/LogIn" element={<LogIn/>} />
 					</Routes>
 				</BrowserRouter>
 
@@ -44,10 +48,11 @@ function App() {
 							</a>
 						</li>
 						<li class='nav-item active'>
-							<a class='nav-link' href='/Services'>
+							<a class='nav-link' href='/SignUp/SignUp'>
 								<FaUser size={26}/>
 							</a>
 						</li>
+						
 					</ul>
 				</div>
 			</div>
